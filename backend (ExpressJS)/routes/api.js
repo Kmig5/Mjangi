@@ -1,7 +1,7 @@
-const express       = require('express');
-const router        = express.Router();
-const Member        = require('../models/Member');
-const TontineGroupe = require('../models/TontineGroupe');
+const express = require('express');
+const router = express.Router();
+const Member = require('../models/members');
+const TontineGroupe = require('../models/tontineGroups');
 
 // LES APIS DES MEMBRES ///////////////////////////////////////////////// /////
 
