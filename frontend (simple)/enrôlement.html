@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Enrôlement Membre</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <h2>Tontine App</h2>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="annuaire.html">Annuaire</a></li>
+      <li><a href="enrôlement.html" class="active">Enrôlement</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <h1>Enrôlement Membre</h1>
+
+  <form id="memberForm">
+
+    <div class="card">
+      <h2>Infos d'identité</h2>
+
+      <input type="text" id="nom" placeholder="Nom complet" required>
+      <input type="text" id="cni" placeholder="Numéro CNI" required>
+      <input type="text" id="contact" placeholder="Contact principal" required>
+      <input type="text" id="contactUrgence" placeholder="Contact urgence" required>
+    </div>
+
+    <div class="card">
+      <h2>Adhésion aux tontines</h2>
+      <select id="tontines" multiple>
+        <option value="Tontine A">Tontine A</option>
+        <option value="Tontine B">Tontine B</option>
+        <option value="Tontine C">Tontine C</option>
+      </select>
+    </div>
+
+    <div class="card">
+      <h2>Versement express</h2>
+      <button type="button" onclick="ajouterCotisation()">Ajouter une cotisation</button>
+
+      <div id="cotisations"></div>
+    </div>
+
+    <button type="submit" class="btn-primary">Enregistrer membre</button>
+
+  </form>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/enrôlement.js"></script>
+</body>
+</html>

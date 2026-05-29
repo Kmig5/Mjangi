@@ -14,7 +14,7 @@ const memberSchema = new mongoose.Schema({
   quartier:   { type: String },
   profession: { type: String },
   tontines:   [{ type: mongoose.Schema.Types.ObjectId, ref: 'TontineGroupe' }],
-  cotisation: [cotisationSchema],
+  cotisations: [cotisationSchema],
 });
 
 module.exports = mongoose.model('Member', memberSchema, 'members');

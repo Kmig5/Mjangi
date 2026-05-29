@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Annuaire des Membres</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <h2>Tontine App</h2>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="annuaire.html" class="active">Annuaire</a></li>
+      <li><a href="enrôlement.html">Enrôlement</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+<h1>Annuaire des Membres</h1>
+
+<input type="text" id="search" placeholder="Rechercher un membre...">
+<button onclick="filtrerPenalises()">Voir pénalisés</button>
+
+<div id="members"></div>
+
+<!-- MODALE -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <pre id="jsonView"></pre>
+  </div>
+</div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/annuaire.js"></script>
+</body>
+</html>

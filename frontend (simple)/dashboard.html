@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard Financier</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <h2>Tontine App</h2>
+    <ul class="nav-links">
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="annuaire.html">Annuaire</a></li>
+      <li><a href="enrôlement.html">Enrôlement</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+<h1>Dashboard Caisse Centrale</h1>
+
+<div class="card">
+  <h2>Encaisse totale</h2>
+  <h3 id="encaisse">0 FCFA</h3>
+</div>
+
+<div class="card">
+  <h2>Recouvrement</h2>
+  <h3 id="recouvrement">0%</h3>
+</div>
+
+<div class="card">
+  <h2>Pénalités collectées</h2>
+  <h3 id="penalites">0 FCFA</h3>
+</div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
